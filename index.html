@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #query{
+            width: 200px;
+        }
+        #movies{
+            border: solid 1px black;
+            height: 200px;
+            width: 206px;
+            border-top: none;
+            overflow: scroll;
+            display: none;
+        }
+        .nameMovie{
+            cursor: pointer;
+
+        }
+        .nameMovie:hover{
+            background-color: beige;
+        }
+        #main{
+            display: flex;
+            margin: auto;
+        }
+        #main>div{
+            /* border: 1px solid red; */
+            height: auto;
+            width: auto;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <h1>Hotstar 2</h1>
+            <input oninput="debounce(main,1000)" type="text" id="query"/>
+            <div id="movies"></div>
+        </div>
+        <div id="details"></div>
+    </div>
+
+
+
+</body>
+</html>
+<script src="./test.js">
+
+</script>
